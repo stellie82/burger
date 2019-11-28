@@ -1,5 +1,23 @@
 <h1>Eat-Da-Burger!</h1>
 
+<h2>Burgers of Interest</h2>
+<ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devour=true}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>Eaten Burgers</h2>
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    {{> burgers/burger-block devour=false}}
+    {{/if}}
+    {{/each}}
+</ul>
+
 <form class="create-form">
 
     <div class="form-group">
@@ -10,4 +28,4 @@
     <button type="submit">Submit</button>
 </form>
 
-<h2>Eat a burger that you want to eat and click the "Submit" button.</h2>
+<p>Eat a burger that you want to eat and click the "Submit" button.</p>
