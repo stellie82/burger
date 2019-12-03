@@ -1,3 +1,44 @@
-h1, h2, p {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+}
+
+h1, h2, p, li, .create-form {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+.container {
+    width: auto;
+    height: 500px;
+    padding: 25px 0 100px 0;
+    text-align: center;
+    background-image: url(../images/burgers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+h2 {
+    text-shadow: 1px 1px 2px ghostwhite;
+}
+
+.section {
+    padding: 10px 125px;
+    display: inline-block;
+    vertical-align: top;
 }
