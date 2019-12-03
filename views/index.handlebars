@@ -1,6 +1,6 @@
-<h1>Eat-Da-Burger!</h1>
+<h1>Burgers Bucket List</h1>
 
-<h2>Burgers of Interest</h2>
+<h2>What to add to the menu</h2>
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
@@ -9,7 +9,7 @@
     {{/each}}
 </ul>
 
-<h2>Eaten Burgers</h2>
+<h2>Been there, ate that</h2>
 <ul>
     {{#each burgers}}
     {{#if devoured}}
@@ -18,14 +18,14 @@
     {{/each}}
 </ul>
 
-<form class="create-form">
+<p>Enter the name of a burger that you want to eat and click the "Submit" button.</p>
 
+<form class="create-form">
     <div class="form-group">
-        <label for="burger">Enter the name of the burger</label>
+        <label for="burger">Name of burger</label>
         <input type="text" id="burger" name="burger">
     </div>
 
     <button type="submit">Submit</button>
 </form>
 
-<p>Eat a burger that you want to eat and click the "Submit" button.</p>
