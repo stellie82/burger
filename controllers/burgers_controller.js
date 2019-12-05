@@ -1,8 +1,10 @@
 var express = require("express");
-var burger = require("../models/burger.js");
-
 var router = express.Router();
 
+// Import model to use its database functions
+var burger = require("../models/burger.js");
+
+// Create all routes
 router.get("/", function (req, res) {
     burger.selectAll(function (data) {
         var obj = {
@@ -38,4 +40,5 @@ router.put("/api/burgers/:id", function (req, res) {
     );
 });
 
+// Export routes for server.js
 module.exports = router;

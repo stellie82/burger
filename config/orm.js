@@ -16,6 +16,7 @@ function objToSql(ob) {
     return arr.toString();
 }
 
+// Object for all SQL statement functions
 var orm = {
     selectAll: function (table, cb) {
         var queryString = "SELECT * FROM " + table + ";";
@@ -51,4 +52,5 @@ var orm = {
     }
 };
 
+// Export the ORM object for model
 module.exports = orm;

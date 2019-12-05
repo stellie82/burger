@@ -6,7 +6,7 @@ var exphbs = require("express-handlebars");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-// Setup static content from the "public" directory in the application directory
+// Set up static content from the "public" directory in the application directory
 app.use(express.static("public"));
 
 // Set up Express app to handle data parsing
