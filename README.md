@@ -22,6 +22,3 @@ Burger Bucket List requires installation of a few Node modules, including:
 [Burger Bucket List (Github)](https://github.com/stellie82/burger.git)
 
 [Try the app!](https://burger-devour-list.herokuapp.com/)
-
-
-Your app will store every burger in a database, whether devoured or not.
