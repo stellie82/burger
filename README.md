@@ -19,7 +19,7 @@ Burger Bucket List requires installation of a few Node modules, including:
   * ORM
 * Heroku
  
-[Companion Finder (Github)](https://github.com/stellie82/burger.git)
+[Burger Bucket List (Github)](https://github.com/stellie82/burger.git)
 
 [Try the app!](https://burger-devour-list.herokuapp.com/)
 
